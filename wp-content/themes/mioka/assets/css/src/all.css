@@ -1,0 +1,228 @@
+/* Заголовок секций */
+.section-title {
+  font-family: Karton, Arial, sans-serif;
+  font-size: 42px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.section-title .marker {
+  color: var(--color-accent-2);
+}
+
+@media (max-width: 690px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .section-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+/* Подзаголовок секций */
+.section-subtitle {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+}
+
+@media (max-width: 690px) {
+  .section-subtitle {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+/* Синяя кнопка */
+.btn-blue {
+  border: none;
+  background-color: var(--color-accent-1);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  padding: 7px 16px;
+  font-size: 15px;
+  transition: background-color ease .2s, opacity ease .2s, transform ease .2s;
+  text-decoration: none;
+  line-height: 18px;
+}
+
+.btn-blue:hover {
+  /* background-color: var(--color-accent-2); */
+  opacity: .7;
+}
+
+.btn-blue:active {
+  transform: scale(.95);
+}
+
+.btn-blue:disabled {
+  opacity: .5 !important;
+  transform: scale(1) !important;
+  cursor: default !important;
+  background-color: var(--color-accent-1) !important;
+}
+
+/* Список соцсетей */
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-list__icon {
+  width: 55px;
+  height: 55px;
+}
+
+.social-list__icon {
+  transition: opacity ease .2s;
+}
+
+.social-list__item:hover .social-list__icon {
+  opacity: .5;
+}
+
+.social-list__item:active .social-list__icon {
+  opacity: .2;
+}
+
+@media (max-width: 870px) {
+  .social-list__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 670px) {
+  .social-list__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Декоративные изображения */
+.decor-image {
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+
+@media (max-width: 650px) {
+  .decor-image {
+    display: none;
+  }
+}
+
+/* Оранжевая градиентная кнопка */
+.orange-gradient-btn {
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.orange-gradient-btn__inner {
+  background: linear-gradient(90deg, #faeea8, var(--color-accent-2));
+  border: none;
+  border-radius: 10px;
+  padding: 13px 60px;
+  transition: opacity ease .2s;
+}
+
+.orange-gradient-btn:not([disabled]):hover .orange-gradient-btn__inner {
+  opacity: .7;
+}
+
+.orange-gradient-btn:not([disabled]):active .orange-gradient-btn__inner {
+  opacity: .4;
+  transition: opacity ease .01s;
+}
+
+@media (max-width: 690px) {
+  .orange-gradient-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .orange-gradient-btn {
+    font-size: 14px;
+  }
+
+  .orange-gradient-btn__inner {
+    padding: 10px 40px;
+  }
+}
+
+/* Навигация у слайдеров */
+.slider__nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.slider__nav-btn {
+  background: none;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  transition: opacity ease .2s;
+}
+
+@media (pointer: fine) {
+  .slider__nav-btn:hover {
+    opacity: .6;
+  }
+
+  .slider__nav-btn:active {
+    opacity: .2;
+  }
+}
+
+.slider__nav-btn.swiper-button-disabled {
+  opacity: .2;
+  cursor: default;
+}
+
+@media (max-width: 690px) {
+  .slider__nav-btn-image {
+    width: 120px;
+  }
+
+  .slider__nav {
+    column-gap: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .slider__nav-btn {
+    padding: 20px 10px;
+  }
+
+  .slider__nav-btn-image  {
+    width: 100px;
+  }
+}
+
+/* Кнопка подгрузки "Показать ещё". Скрытие кнопки лежит на родителе */
+.js-show-more {
+  cursor: pointer;
+}
+
+.js-show-more__inner {
+  padding: 10px 30px;
+}

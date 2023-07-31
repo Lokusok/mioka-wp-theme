@@ -1,0 +1,25 @@
+/* Скрыть визуально, оставить для скринридеров */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Невозможность выделения выходных дней в AirDatepicker */
+.air-datepicker-cell.-weekend- {
+  opacity: .5;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Скрыть невидимую форму */
+#wpcf7-f437-o1 {
+  display: none;
+}

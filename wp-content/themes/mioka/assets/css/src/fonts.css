@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Literal;
+  font-display: swap;
+  font-weight: 300;
+  src: 
+    url(../../fonts/literal-light.woff2) format('woff2'),
+    url(../../fonts/literal-light.woff) format('woff'),
+    url(../../fonts/literal-light.otf) format('opentype'),
+    url(../../fonts/literal-light.ttf) format('truetype')
+  ;
+}
+
+@font-face {
+  font-family: Literal;
+  font-display: swap;
+  font-weight: 400;
+  src: 
+    url(../../fonts/literal-regular.woff2) format('woff2'),
+    url(../../fonts/literal-regular.woff) format('woff'),
+    url(../../fonts/literal-regular.otf) format('opentype'),
+    url(../../fonts/literal-regular.ttf) format('opentype')
+  ;
+}
+
+@font-face {
+  font-family: Literal;
+  font-display: swap;
+  font-weight: 700;
+  src: 
+    url(../../fonts/literal-bold.woff2) format('woff2'),
+    url(../../fonts/literal-bold.woff) format('woff'),
+    url(../../fonts/literal-bold.otf) format('opentype'),
+    url(../../fonts/literal-bold.ttf) format('truetype')
+  ;
+}
+
+@font-face {
+  font-family: Karton;
+  font-display: swap;
+  font-weight: 400;
+  src: 
+    url(../../fonts/karton-regular.woff2) format('woff2'),
+    url(../../fonts/karton-regular.woff) format('woff'),
+    url(../../fonts/karton-regular.otf) format('opentype'),
+    url(../../fonts/karton-regular.ttf) format('truetype')
+  ;
+}
